@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./validattion.js"></script>
+</head>
+
+<body>
+    <form method="post" action="#" onsubmit="return checkAllData()">
+        <div class="FORM">
+            <header>
+                <div class="title">
+                    <h2>APPLICATION FORM</h2>
+                </div>
+            </header>
+            <main>
+                <div class="name">
+                    <tr>
+                        <td>First name: </td>
+                        <td><input type="text" name="txtName" placeholder="Please enter your name" class="input-name"
+                                id="idname"></td>
+                    </tr>
+                </div>
+                <div class="eudcation">
+                    <tr>
+                        <td>Education: </td>
+                        <td><input type="checkbox" name="txtEducation" class="input-Education" value="Graduate" id="education">Graduate                     
+                        <input type="checkbox" name="txtEducation" class="input-Education" value="Post" id="education">Post
+                            Graduate</td>
+                    </tr>
+                </div>
+                <div class="gender"
+                    style="display:flex; flex-direction: row; justify-content: space-between; align-items: center">
+                    <p class="gender1">Gender:</p>
+                    <p class="gender2">
+                        <input type="radio" name="txtGender" class="input-Gender" value="Male" id="idgender">Male
+                        <input type="radio" name="txtGender" class="input-Gender" value="Female">Female
+                    </p>
+
+                </div>
+                <div class="salary"
+                    style="display:flex; flex-direction: row; justify-content: space-between; align-items: center">
+                    <p class="check1">Salary: </p>
+                    <input type="txt" name="txtSalary" class="input-Salary">
+                </div>
+                <div class="remarks">
+                    <p class="check1">Remakrs: </p>
+                    <textarea name="txtRemarks" id="Remarks" cols="32" rows="4" placeholder="Type your text here"></textarea>
+                </div>
+                <div class="country">
+                    <tr>
+                        <td>Country: </td>
+                        <td>
+                            <select name="country-type" id="id-country">
+                                <option value="Australia">Australia</option>
+                                <option value="VietNam">VietNam</option>
+                                <option value="ThaiLan">ThaiLan</option>
+                            </select>
+                        </td>
+                    </tr>
+                </div>
+            </main>
+            <footer>
+                <div class="botton">
+                    <tr>
+                        <td>
+                            <input type="submit" name="dongy" value="SUBMIT">
+                            <input type="reset" name="huybo" value="REST">
+                        </td>
+                    </tr>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>
